@@ -5,7 +5,6 @@ import { FilmsComponent } from './components/films/films.component';
 import { FilmDetailComponent } from './components/films/film-detail/film-detail.component';
 import { FilmStartComponent } from './components/films/film-start/film-start.component';
 import { FilmEditComponent } from './components/films/film-edit/film-edit.component';
-import { HallsComponent } from './components/halls/hall.component';
 import { CharactersComponent } from './components/characters/characters.component';
 import { CharacterDetailComponent } from './components/characters/character-detail/character-detail.component';
 import { CharacterStartComponent } from './components/characters/character-start/character-start.component';
@@ -20,12 +19,11 @@ const appRoutes: Routes = [
     { path: ':id/edit' , component: FilmEditComponent }
   ] },
   { path: 'characters', component: CharactersComponent, children: [
-    { path: '', component: CharacterStartComponent },
+    { path: 'characters', component: CharacterStartComponent },
     { path: 'new', component: CharactersComponent },
     { path: ':id', component: CharacterDetailComponent },
     { path: ':id/edit' , component: CharacterEditComponent }
   ] },
-  { path: 'halls', component: HallsComponent},
   { path: 'dashboard', component: DashboardComponent}
 ];
 
