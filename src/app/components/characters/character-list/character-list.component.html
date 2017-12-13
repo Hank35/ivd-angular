@@ -1,13 +1,13 @@
 <div class="row">
   <div class="col-xs-12">
-    <button (click)="onNewCharacter()" class="btn btn-succes">New Character</button>
+    <button (click)="onNewCharacter()" class="btn btn-succes">New Actor</button>
   </div>
 </div>
 <hr>
 <div class="row">
   <div class="col-xs-12">
     <app-character-item
-    *ngFor="let characterEl of character; let i = index"
+    *ngFor="let characterEl of characters; let i = index"
     [character]="characterEl"
     [index]="i"></app-character-item>
   </div>
