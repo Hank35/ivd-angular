@@ -1,0 +1,17 @@
+<a
+style='cursor: pointer;'
+[routerLink]="[index]"
+routerLinkActive='active'
+class="list-group-item clearfix"
+>
+<div class="media">
+        <div class="media-left">
+          <img [src]="character.imagePath" class="media-object" style="width:80px">
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading">{{ character.name }}</h4>
+          <p>{{ character.description }}</p>
+        </div>
+      </div>
+
+</a>
